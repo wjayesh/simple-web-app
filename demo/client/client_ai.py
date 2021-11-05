@@ -4,11 +4,9 @@ import requests
 # [TASK] Find out the best practice for storing keys. 
 from key import key   
  
-# url for the local server
-url_local = 'http://localhost:3000/'
 
 # url for my Azure Computer Vision instance
-url_image_api = 'https://vision-api-jayesh.cognitiveservices.azure.com/'
+url_image_api = 'https://vision-api-wjayesh.cognitiveservices.azure.com/vision/v3.2/read/analyze?visualFeatures=Categories,Description&details=Landmarks'
  
 # define headers here
 headers = {
@@ -17,10 +15,11 @@ headers = {
     }
  
 data = {
-    "url":"./images/labrador-pup.jpg"
+    "url":"https://raw.githubusercontent.com/Azure-Samples/cognitive-services-sample-data-files/master/ComputerVision/Images/landmark.jpg"
 }
 
 # let's make a request now, passing our url and headers
-req = requests.get(url_image_api, headers=headers, data=data)
+req = requests.post(url_image_api, headers=headers, data=data)
 
-print(req)
+
+print(req.text)
