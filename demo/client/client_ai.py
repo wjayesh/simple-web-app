@@ -10,7 +10,7 @@ url_image_api = 'https://vision-api-wjayesh.cognitiveservices.azure.com/vision/v
  
 # define headers here
 headers = {
-    'Ocp-Apim-Subscription-Key': key,     # this is the key that tells Azure that 
+    'Ocp-Apim-Subscription-Key': key,     # this is the key that tells Azure that it is me accessing the endpoint
     'Content-Type': 'application/json',
     }
  
