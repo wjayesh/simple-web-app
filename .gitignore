@@ -136,3 +136,4 @@ dist
 
 # Extra
 key.py
+__pycache__
