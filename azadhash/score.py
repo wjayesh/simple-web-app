@@ -31,7 +31,6 @@ def send_msg(text):
     headers = {"Accept": "application/json", "Content-Type": "application/json"}
     response = requests.request("POST", url, json=payload, headers=headers)
 
-    print(response.text)
 
 send_msg(toss)
 send_msg(away_score)
