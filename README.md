@@ -7,4 +7,5 @@ Repository to host the demo app and all community-submitted applications for the
 | Name | GitHub username | Description |
 | ---- | --------------- | ----------- |
 | Jayesh Sharma | [wjayesh](https://github.com/wjayesh) | The demo app shows a basic REST API call between a server and a client | 
-| Jai Ganesh | [jaiganesh22](https://github.com/jaiganesh22) | The Crick_Scr_Bot contains the code files (jupyter notebooks) for the Score bot built using espn, telegram apis |
+| Jai Ganesh | [jaiganesh22](https://github.com/jaiganesh22) | The file consists of scheduler(to run the main code repeatedly) and main code file which has the Bot 
+ built using espn and telegram apis |
