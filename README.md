@@ -7,4 +7,5 @@ Repository to host the demo app and all community-submitted applications for the
 | Name | GitHub username | Description |
 | ---- | --------------- | ----------- |
 | Jayesh Sharma | [wjayesh](https://github.com/wjayesh) | The demo app shows a basic REST API call between a server and a client | 
+| Azad Singh    | [azadhash](https://github.com/azadhash) |  Cricket alert to telegram                                           | 
 
