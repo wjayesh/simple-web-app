@@ -6,5 +6,6 @@ Repository to host the demo app and all community-submitted applications for the
 ## Contributors
 | Name | GitHub username | Description |
 | ---- | --------------- | ----------- |
-| Jayesh Sharma | [wjayesh](https://github.com/wjayesh) | The demo app shows a basic REST API call between a server and a client | 
+| Jayesh Sharma | [wjayesh](https://github.com/wjayesh) | The demo app shows a basic REST API call between a server and a client |
+| Mayur Saroj | [mayursarojdev](https://github.com/mayursarojdev) | A telegram bot which sends latest posts updates from subreddit of your choice. |
 
