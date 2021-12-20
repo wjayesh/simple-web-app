@@ -13,7 +13,7 @@ A telegram bot 'score-cric-app-liv' which sends scores, live performance of play
 
 -type 'scores'  -> gives the live match details
 
--type 'ballbyball' - to get ball by ball commentory
+-type 'ballbyball' - to get ball by ball commentory every 10 secs.
 
 -type 'batsmen' - to get live performance of batsmen
 
