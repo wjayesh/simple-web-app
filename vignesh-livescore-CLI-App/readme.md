@@ -1,8 +1,31 @@
-This app gives live score to telegram id for every 10 secs.
+## Contributors
+| Name | GitHub username | Description |
 
-This app is built with Node JS and JS.
+| Vignesh P  | vignesh-prabakaran | cricket live score App|
 
-Run Instructions:
-  a. Download the code
-  b. Mention ur phone number in index.js file and save it
-  b. then run "npm start" from command line.
+## Description
+
+A telegram bot 'score-cric-app-liv' which sends scores, live performance of players, live performance of bowlers of current live cricket match.
+
+## Features
+
+-go to bot 'score-cric-app-liv' in telegram app
+
+-type 'scores'  -> gives the live match details
+
+-type 'ballbyball' - to get ball by ball commentory
+or
+-type 'batsmen' - to get live performance of batsmen
+or
+type 'bowler' - to get live performance of bowler
+
+type 'stop' - to stop the messages.
+
+
+
+## Steps to install
+
+-npm install
+-node client.js
+
+
