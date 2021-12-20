@@ -1,7 +1,7 @@
 ## Contributors
 | Name | GitHub username | Description |
 
-| Vignesh P  | vignesh-prabakaran | cricket live score App|
+| Vignesh P  | vignesh-prabakaran | A Cricket live score app which sends scores, live performance of players, live performance of bowlers of from live cricket match.|
 
 ## Description
 
