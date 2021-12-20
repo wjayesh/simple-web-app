@@ -28,7 +28,6 @@ class RedditAPI {
   // Public methods
   async fetchSubredditPosts(subredditName, params) {
     const { sort } = params;
-    let posts = [];
     const subredditAPIUrl = this._genSubredditAPIUrl(subredditName, params);
 
     // Make api call
@@ -36,8 +35,25 @@ class RedditAPI {
       const postsResp = await axios.get(subredditAPIUrl);
       return postsResp.data;
     } catch (error) {
-      return posts;
+      return {};
     }
+  }
+
+  async fetchSubredditInfo(subredditName) {
+    const fetchedPosts = await this.fetchSubredditPosts(subredditName, {
+      limit: 1,
+    });
+    const subredditInfo = fetchedPosts.subredditAboutInfo;
+    if (subredditInfo != undefined) {
+      // returning the nested object
+      return subredditInfo[Object.keys(subredditInfo)[0]];
+    } else {
+      return null;
+    }
+  }
+
+  async isValidSubreddit(subredditName) {
+    return (await this.fetchSubredditInfo(subredditName)) ? true : false;
   }
 }
 
