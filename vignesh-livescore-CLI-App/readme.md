@@ -7,7 +7,7 @@
 
 A telegram bot 'score-cric-app-liv' which sends scores, live performance of players, live performance of bowlers of current live cricket match.
 
-## Features
+## Features & instructions
 
 -go to bot 'score-cric-app-liv' in telegram app
 
