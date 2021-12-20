@@ -44,7 +44,7 @@ bot.onText(regex, (msg, match) => {
                     i -= 1;
                     if (i !== 0) //to break the loop
                         timerfunction();
-                }, 5000);
+                }, 10000);
             }
             timerfunction();
             bot.onText(/stop/i, (msg, match) => {
@@ -74,7 +74,7 @@ bot.onText(regex, (msg, match) => {
                         if (j !== batsmenArray.length) //to break loop
                             timerfunction();
                     }
-                }, 5000);
+                }, 10000);
             }
             timerfunction();
             bot.onText(/stop/i, (msg, match) => {
@@ -105,7 +105,7 @@ bot.onText(regex, (msg, match) => {
                         if (k !== bowlersArray.length) //to break the loop
                             timerfunction();
                     }
-                }, 5000);
+                }, 10000);
             }
             timerfunction();
             bot.onText(/stop/i, (msg, match) => {
