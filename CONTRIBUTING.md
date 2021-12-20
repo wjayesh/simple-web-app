@@ -10,6 +10,5 @@ to share it with the world! ⚡
  
  
 |name | github-username | short description of your project |
-| Amit Dutta | Amitdutta7 | Telegram Bot Sends Dog Images every 10 mins to a Channel from Reddit API  |
 
 5. Create a Pull Request (PR) to merge your code with this repository 🎉

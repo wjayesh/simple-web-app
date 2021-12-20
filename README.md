@@ -7,4 +7,5 @@ Repository to host the demo app and all community-submitted applications for the
 | Name | GitHub username | Description |
 | ---- | --------------- | ----------- |
 | Jayesh Sharma | [wjayesh](https://github.com/wjayesh) | The demo app shows a basic REST API call between a server and a client | 
+| Amit Dutta | [Amitdutta7](https://github.com/Amitdutta7/) | Telegram Bot Sends Dog Images every 10 mins to a Channel from Reddit API  |
 
