@@ -25,8 +25,10 @@ type 'stop' - to stop the messages.
 
 ## Steps to install
 
-1. npm install
+1. Open project folder
 
-2. node client.js
+2. npm install
+
+3. node client.js
 
 
