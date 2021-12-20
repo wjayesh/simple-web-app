@@ -56,20 +56,24 @@ bot.onText(regex, (msg, match) => {
             async function timerfunction() {
                 timer = setTimeout(async() => {
                     const matchData = await axios.request(options);
-                    let batsmenArray = matchData.data.livePerformance.batsmen;
-                    let playerName = batsmenArray[j].player.longName;
-                    let playingRole = batsmenArray[j].player.playingRole;
-                    let runs = batsmenArray[j].runs;
-                    let balls = batsmenArray[j].balls;
-                    let sixes = batsmenArray[j].sixes;
-                    let fours = batsmenArray[j].fours;
-                    let strikeRate = batsmenArray[j].strikerate;
-                    let wagonData = batsmenArray[j].wagonData.join(',');
-                    let comment = `Player Name: ${playerName}\nPlaying Role: ${playingRole}\nRuns: ${runs}\nBalls: ${balls}\nSixes: ${sixes}\nFours: ${fours}\nStrikeRate: ${strikeRate}\nWagon Data: ${wagonData}`;
-                    bot.sendMessage(chatId, comment);
-                    j += 1;
-                    if (j !== batsmenArray.length) //to break loop
-                        timerfunction();
+                    if (matchData.data.livePerformance === null) {
+                        bot.sendMessage(chatId, "There is no live performance at the moment. Match halted!");
+                    } else {
+                        let batsmenArray = matchData.data.livePerformance.batsmen;
+                        let playerName = batsmenArray[j].player.longName;
+                        let playingRole = batsmenArray[j].player.playingRole;
+                        let runs = batsmenArray[j].runs;
+                        let balls = batsmenArray[j].balls;
+                        let sixes = batsmenArray[j].sixes;
+                        let fours = batsmenArray[j].fours;
+                        let strikeRate = batsmenArray[j].strikerate;
+                        let wagonData = batsmenArray[j].wagonData.join(',');
+                        let comment = `Player Name: ${playerName}\nPlaying Role: ${playingRole}\nRuns: ${runs}\nBalls: ${balls}\nSixes: ${sixes}\nFours: ${fours}\nStrikeRate: ${strikeRate}\nWagon Data: ${wagonData}`;
+                        bot.sendMessage(chatId, comment);
+                        j += 1;
+                        if (j !== batsmenArray.length) //to break loop
+                            timerfunction();
+                    }
                 }, 5000);
             }
             timerfunction();
@@ -82,21 +86,25 @@ bot.onText(regex, (msg, match) => {
             async function timerfunction() {
                 timer = setTimeout(async() => {
                     const matchData = await axios.request(options);
-                    let bowlersArray = matchData.data.livePerformance.bowlers;
-                    let playerName = bowlersArray[k].player.longName;
-                    let playingRole = bowlersArray[k].player.playingRole;
-                    let team = bowlersArray[k].teamAbbreviation;
-                    let overs = bowlersArray[k].overs;
-                    let balls = bowlersArray[k].balls;
-                    let dots = bowlersArray[k].dots;
-                    let maidens = bowlersArray[k].maidens;
-                    let wickets = bowlersArray[k].wickets;
-                    let economy = bowlersArray[k].economy;
-                    let comment = `Player Name: ${playerName}\nPlaying Role: ${playingRole}\nTeam: ${team}\nOvers: ${overs}\nBalls: ${balls}\nDots: ${dots}\nMaidens: ${maidens}\nWickets: ${wickets}\nEconomy: ${economy}`;
-                    bot.sendMessage(chatId, comment);
-                    k += 1;
-                    if (k !== bowlersArray.length) //to break the loop
-                        timerfunction();
+                    if (matchData.data.livePerformance === null) {
+                        bot.sendMessage(chatId, "There is no live performance at the moment. Match halted!");
+                    } else {
+                        let bowlersArray = matchData.data.livePerformance.bowlers;
+                        let playerName = bowlersArray[k].player.longName;
+                        let playingRole = bowlersArray[k].player.playingRole;
+                        let team = bowlersArray[k].teamAbbreviation;
+                        let overs = bowlersArray[k].overs;
+                        let balls = bowlersArray[k].balls;
+                        let dots = bowlersArray[k].dots;
+                        let maidens = bowlersArray[k].maidens;
+                        let wickets = bowlersArray[k].wickets;
+                        let economy = bowlersArray[k].economy;
+                        let comment = `Player Name: ${playerName}\nPlaying Role: ${playingRole}\nTeam: ${team}\nOvers: ${overs}\nBalls: ${balls}\nDots: ${dots}\nMaidens: ${maidens}\nWickets: ${wickets}\nEconomy: ${economy}`;
+                        bot.sendMessage(chatId, comment);
+                        k += 1;
+                        if (k !== bowlersArray.length) //to break the loop
+                            timerfunction();
+                    }
                 }, 5000);
             }
             timerfunction();
