@@ -25,7 +25,8 @@ type 'stop' - to stop the messages.
 
 ## Steps to install
 
--npm install
--node client.js
+1. npm install
+
+2. node client.js
 
 
