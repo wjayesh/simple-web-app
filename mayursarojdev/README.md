@@ -42,6 +42,16 @@ A telegram bot which sends latest posts of subreddit of your choice. According t
 - axios
 - dotenv
 
+## How it works
+
+- Created a custom lighweight wrapper API for reddit containing simple methods to fetch posts, validate subreddit name and more.
+
+- The posts fetched are processed to get the unique posts that havent been sent before.
+
+- The posts are sent to the bot using the node-telegram-bot-api methods.
+
+- According to commands given on bot, the server performs differnt tasks, like starting, stopping and changing the subreddit to fetch posts from.
+
 ## ✍️Author
 
 Mayur Saroj (https://github.com/mayursarojdev)
