@@ -13,10 +13,13 @@ A telegram bot which sends latest posts of subreddit of your choice. According t
 
 ## 🖼️Demo
 
-#### Bot demo gif
+### Getting subreddit updates
 
-![Bot Demo](demo/demo.gif)
-More bot demos in demo folder
+<img src='demo/start_stop_demo.gif' width="480">
+
+### Validation while changing subreddit
+
+<img src='demo/change_subreddit_demo.gif' width="480">
 
 ## 🤖Bot commands
 
