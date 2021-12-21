@@ -1,17 +1,33 @@
 # 🔔Subreddit Notify
 
-## 📰Description
+## Content
+
+- [**📰Description**](#description)
+- [**✨Features**](#features)
+- [**🖼️Demo**](#demo)
+  - [Getting subreddit updates](#getting-subreddit-updates)
+  - [Validation while changing subreddit](#validation-while-changing-subreddit)
+- [**🤖Bot commands**](#bot-commands)
+- [**⏯️Steps**](#steps)
+- [**👜Packages used**](#packages-used)
+- [**⚙️How it works**](#how-it-works)
+- [**✍️Author**](#author)
+- [**🔒License**](#license)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
+## Description
 
 A telegram bot which sends latest posts of subreddit of your choice. According to the set interval the bot will keep sending the latest updates from the subreddit, untill stopped.
 
-## ✨Features
+## Features
 
 - 🕐Get periodic updates Example: every 5 minutes.
 - 💁Customizable subreddit and interval time.
 - 🔥Unique new posts everytime.
 - ⏮️If no new posts available, it sends an earlier post untill there are latest updates available.
 
-## 🖼️Demo
+## Demo
 
 ### Getting subreddit updates
 
@@ -21,14 +37,14 @@ A telegram bot which sends latest posts of subreddit of your choice. According t
 
 <img src='demo/change_subreddit_demo.gif' width="480">
 
-## 🤖Bot commands
+## Bot commands
 
 - /start - start getting updates
 - /stop - stop getting updates
 - /subreddit - Change the subreddit
 - /help - show all commands
 
-## ⏯️Steps
+## Steps
 
 - npm install: Install dependencies
 - Create telegram bot using [botfather](https://www.siteguarding.com/en/how-to-get-telegram-bot-api-token), and save the API Key
@@ -36,7 +52,7 @@ A telegram bot which sends latest posts of subreddit of your choice. According t
 - npm run dev: Run the server
 - Start the telegram bot with /start command
 
-## 👜Packages used
+## Packages used
 
 - node-telegram-bot-api
 - axios
@@ -52,12 +68,12 @@ A telegram bot which sends latest posts of subreddit of your choice. According t
 
 - According to commands given on bot, the server performs differnt tasks, like starting, stopping and changing the subreddit to fetch posts from.
 
-## ✍️Author
+## Author
 
 Mayur Saroj (https://github.com/mayursarojdev)
 
-## 🔒License
+## License
 
 Spotify-Notify
 
-This program is free software: However give due credits to @mayursarojdev while using and redistributing the program.
+This program is free to use, modify and redistribute however give due credits to [@mayursarojdev](https://github.com/mayursarojdev).
